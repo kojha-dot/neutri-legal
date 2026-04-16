@@ -1,17 +1,7 @@
 {
-  "version": 2,
-  "cleanUrls": true,
-  "headers": [
-    {
-      "source": "/.well-known/apple-app-site-association",
-      "headers": [{ "key": "Content-Type", "value": "application/json" }]
-    },
-    {
-      "source": "/.well-known/assetlinks.json",
-      "headers": [{ "key": "Content-Type", "value": "application/json" }]
-    }
-  ],
   "rewrites": [
-    { "source": "/auth/tiktok", "destination": "/index.html" }
+    { "source": "/terms", "destination": "/terms.html" },
+    { "source": "/privacy", "destination": "/privacy.html" },
+    { "source": "/(.*)", "destination": "/index.html" }
   ]
 }
