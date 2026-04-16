@@ -3,20 +3,17 @@
     { "source": "/terms", "destination": "/terms.html" },
     { "source": "/privacy", "destination": "/privacy.html" },
     { "source": "/.well-known/(.*)", "destination": "/.well-known/$1" },
-    { "source": "/auth/tiktok", "destination": "/index.html" }
+    { "source": "/auth/tiktok", "destination": "/index.html" },
+    { "source": "/(.*)", "destination": "/index.html" }
   ],
   "headers": [
     {
       "source": "/.well-known/apple-app-site-association",
-      "headers": [
-        { "key": "Content-Type", "value": "application/json" }
-      ]
+      "headers": [{ "key": "Content-Type", "value": "application/json" }]
     },
     {
       "source": "/.well-known/assetlinks.json",
-      "headers": [
-        { "key": "Content-Type", "value": "application/json" }
-      ]
+      "headers": [{ "key": "Content-Type", "value": "application/json" }]
     }
   ]
 }
